@@ -87,17 +87,11 @@ const markup = images
 
 gallery.insertAdjacentHTML('beforeend', markup);
 
-const links = gallery.querySelectorAll('a');
-for (const link of links) {
-  link.addEventListener('click', event => {
-    event.preventDefault();
-  });
-}
-
 gallery.addEventListener('click', selectImage);
 
 function selectImage(event) {
   if (event.target.nodeName === 'IMG') {
+    event.preventDefault()
     const source = event.target.dataset.source;
     const alt = event.target.alt;
     console.log(source, alt);
