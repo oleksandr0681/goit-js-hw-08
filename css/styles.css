@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.gallery {
+  margin: 0 auto;
+  padding: 24px 156px;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  row-gap: 24px;
+  column-gap: 24px;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
